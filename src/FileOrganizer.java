@@ -1,3 +1,5 @@
+import javax.swing.*;
+import java.io.IOException;
 import java.nio.file.Path;
 
 public class FileOrganizer {
@@ -8,8 +10,13 @@ public class FileOrganizer {
             System.out.println("Operation Failed");
             return;
         }
-        else{
-            System.out.println("The selected directory is : "+selectedPath);
+
+        try {
+            OrganizerLogic logic = new OrganizerLogic(selectedPath);
+            logic.organize();
+            JOptionPane.showMessageDialog(null, "Organization Complete!");
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
     }
 }
