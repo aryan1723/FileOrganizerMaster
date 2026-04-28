@@ -57,6 +57,3 @@ I’m constantly adding new modules. What should come next?
 ☕ Help the Creator
 If this tool saved you time, consider fueling the next update:
 
-Donate via PayPal/UPI
-
-Scan to Tip: (Insert your QR Code Image here)
